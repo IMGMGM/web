@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <title> HTML 스터디</title>
+        <meta charset = "utf-8">
+</head>
+<body>
+    <div>
+        <h2>여기서 배우게 될 태그와 속성들</h2>
+        <a href = "https://codingeverybody.kr/category/html/html-tag/" target =_blank>태그 알아보기</a>
+        <ul>
+            <li> 제목 : (h1-h6)</li>
+            <li> 밑줄 : (u)</li>
+            <li> 강조 : (strong)</li>
+            <li> 줄바꿈 : (br)</li>
+            <li> 단락구분 : (p)</li>
+            <li> 단락에 속성 추가 : (p style=)</li>
+            <li> 이미지태그와 소스 속성 : (img src=)</li>
+            <li> 이미지태그에 넓이 추가 : (img src= "URL" width = "00%"</li>
+            <li> 부모자식관계 태그 : (ul) -(li), (ol)- (li)</li>
+            <li> 웹페이지 탭 타이틀 : (title)</li>
+            <li> 영어 아닌 글자 깨질 떄 : (meta charset = "utf-8"</li>
+            <li> 본문이 아닌 본문 전체를 설명하는 코드를 그룹핑하여 : (head)</li>
+            <li> 본문을 그룹핑할 때 : (body)</li>
+            <li> head와 body를 다 묶을 때 : (!doctype html)</li>
+            <li> 링크 삽입 태그와 속성 : (a href=)</li>
+            <li> 링크 삽입 시 어떤 창에서 : (a href = "URL" target = _self 또는 _blank) </li>
+            <li> 가상의 레이아웃 만들거나 콘텐츠 구분 콘테이너 : (div)</li>
+            <li> 텍스트 범위를 정해주고 스타일을 적용하기 위해 감싸는 태그 : (span)</li>
+            <li> 고유한 이름을 부여하는 속성 : (id)</li>
+            <li> 여러번 사용하는 이름을 부여하는 속성 : (class)</li>
+        </ul>
+    </div>
+    <div>
+        <h2>1. 태그에 대해서 배우기 </h2><br>
+        <p> 이렇게 <span style = "border: 3px solid red">span 요소로 텍스트 일부문</span>만 스타일을 적용할 수 있음 </p>
+        <span>
+            1) 강조하기 : <strong>strong</strong><br>
+            It's very important to pass <strong>my practicum project.</strong> <br><br>
+        </span>
+        
+
+        2) 밑출치기 : underline의 <strong>u</strong><br>
+        <blockquote>very important to pass <strong>my <u>practicum</u> project.</strong> <br><br></blockquote>
+
+        3-1) html의head : <strong>h1부터 h4까지</strong>, 앞 뒤 빈 간격이 존재
+        <h4>Understanding Tag </h4>
+        3-2)만약 headline 대신 Strong을 쓴다면? <br>
+        <strong>Understanding Tag</strong><br>
+        Let's start making webpage with open tutorial. It's very important to pass <strong>my <u>practicum</u> project.</strong> <br><br>
+
+        4-1) 줄바꿈 체크 : <strong>br</strong> 닫지 않는 태그,  img input hr meta 등은 닫지 않는태그의 사례<br>
+        줄바꿈을 하는 이유는 단락을 표현하기 위해<br>
+        Let's start making webpage with open tutorial. It's very important to pass <strong>my <u>practicum</u> project.</strong><br><br>
+        4-2) 단락을 구분하고 표현할 때 : <strong>paragrahp p</strong><br> 단, 단락 간의 간격이 고정되어 br를 선호
+        <p>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p><p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p><br>
+        4-3) paragrahp를 사용하되 줄 간격을 CSS로 조정하는 방법 : <strong>p style="margin-top:45px;</strong> <br>
+        <p>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p><p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p><br><br>
+    </div>
+    <div>
+        <h2>2. 속성에 대해서 배우기 : 태그의 심화된 문법</h2><br>
+        1) 이미지 삽입 : <strong>img 그리고 속성 src</strong><br>
+        img만 넣으면 입력이 되지 않음. img src = 이미지 주소 같이 넣어야 확인가능<br>
+        img 태그 만으로는 안뜨니까 src라는 속성을 추가, 속성값인 이미지 주소 추가<br>
+        img(태그) src(속성)="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png"(속성값)<br>
+        <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png" width = "30%"><br><br>
+        2) 내컴퓨터에 있는 파일<br>
+        html과 같은 위치에 저장 img src="zzangu.jpg" <br>
+        <img src = "zzangu.jpg"><br><br>
+        3) 이미지의 사이즈를 조정하기 위한 속성(attribute): <strong>width</strong><br>
+        속성 : width, 속성값 : "oo%" - 따옴표 잊지 말고 속성 값 사이에 쉼표 필요없음<br> 
+        <img src = "zzangu.jpg" width = "50%"><br><br>
+        4) 부모(parent)-자식(child) 관계구조<strong>p, a</strong><br>
+        <img src = "panda.jpg">
+        <p>
+            <a href="https://opentutorials.org">opentutorials</a>
+        </p>
+        5) 부모 자식처럼 고정관계인 태그들 : <strong>ul - li, ol - li</strong><br>
+        목차를 만들기 위한 태그 list 뜻하는 li  이것은 항상 ul, ol과 같이 쓴다.<br>
+        <ul>
+            <li> 1. 김임금</li>
+            <li> 2. 임디꿍</li>
+            <li> 3. 아꿍따꿍</li>
+        </ul>
+
+        6) 목차 숫자를 직접 입력할 필요 없이 ol-li로 숫자 부여<br>
+        <ol>
+            <li>김임금</li>
+            <li>임디꿍</li>
+            <li>아꿍따꿍</li>
+        </ol><br><br>
+    </div>
+    <div>
+        <h2>3. 문서의 구조와 체계</h2>
+        <stong>head, body, title, mete</stong><br><br>
+        1)웹페이지의 타이틀 만들기 <strong> title </strong><br>
+        (title) 주주의 웹 스터디 (/title) <br>
+        <title>주주의 웹스터디</title>
+        타이틀 태그는 검식엔진이 웹페이지 분석할 떄 가장 중요하게 생각하는 태그임<br>
+        <br>
+        2) 영어 아닌 글자 깨질경우 : <strong>UTF-8로</strong> 열어달라고  이야기하자<br>
+        (meta charset ="utf-8")
+        <meta charset = "utf-8"><br><br>
+        3) 본문을 설명하는 태그 묶어두기: <strong>head</strong> <br>
+        (head)<br>
+        (title) WEB1 - html(/title) <br>
+        (meta charset="utf-8")<br>
+        (/head)<br><br>
+        4) head와 구분하기 위해 본문은 <strong> body</strong>안에 넣어두기<br><br>
+        5) head와 body를 감싸는 최 상단의 태그 : <strong>(!doctype html)</strong>
+
+        <h2>태그 계의 제왕 : Hyper Text 링크 삽입 기능 (a)</h2>
+        (a href = "https://www.w3.org/TR/html5/" target = "_blank" title="html5 specification")Hypertext Markup Language (HTML)(/a)<br>
+
+        <p><a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a></p>
+    </div>
+</body>
+</html>
